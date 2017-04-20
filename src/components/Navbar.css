@@ -1,0 +1,35 @@
+.Navbar {
+    background-color: #850f85;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.24);
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.Navbar ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    font-size: 16px;
+    padding: 0 80px;
+}
+
+.Navbar ul li {
+    display: block;
+}
+
+.Navbar ul li .Navbar__link {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar ul .Navbar__link--right {
+    margin-left: auto;
+}
+
+.Navbar ul li .Navbar__link:hover {
+    background-color: #a218ae;
+    text-decoration: none;
+}
