@@ -51,8 +51,6 @@ class TuningList extends Component {
     tuningRow(tuning, idx) {
 
         let selected = this.state.selected === tuning;
-        let css = `noteRow ${selected}`;
-
         return (
             <li className={selected ? 'noteRow--selected' : ''} key={idx} onClick={() => this.handleRowClick(tuning)}>
                 <p>{tuning.name}</p>

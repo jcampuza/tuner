@@ -1,21 +1,37 @@
+.Navbar__container {
+    margin-bottom: 1em;
+}
+
 .Navbar {
-    background-color: #850f85;
-    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.24);
+    background-color: #181818;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.24);
     color: #ffffff;
     margin: 0;
-    margin-bottom: 20px;
 }
 
 .Navbar ul {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-around;
     list-style: none;
     font-size: 16px;
-    padding: 0 80px;
+    padding: 0em;
 }
 
 .Navbar ul li {
     display: block;
+    flex: 1 0 auto;
+    border-bottom: 3px solid transparent;
+}
+
+.Navbar ul li.active {
+    border-bottom: 3px solid #ffffff;
+    background-color: #2f2f2f;
+}
+
+.Navbar ul li:hover {
+    background-color: #1f1f1f;
+    border-bottom: 3px solid #ffffff;
 }
 
 .Navbar ul li .Navbar__link {
@@ -25,11 +41,12 @@
     align-items: center;
 }
 
-.Navbar ul .Navbar__link--right {
-    margin-left: auto;
+.Navbar ul li .Navbar__link:hover {
+    text-decoration: none;
 }
 
-.Navbar ul li .Navbar__link:hover {
-    background-color: #a218ae;
-    text-decoration: none;
+@media only screen and (min-width: 720px) {
+    .Navbar ul .Navbar__link--right {
+        margin-left: auto;
+    }
 }
