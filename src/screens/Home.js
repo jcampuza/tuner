@@ -7,7 +7,6 @@ class Home extends Component {
   render() {
     return (
         <section>
-            {/*<Sidebar></Sidebar>*/}
             <main className="container">
                <AudioRecord></AudioRecord> 
             </main>
